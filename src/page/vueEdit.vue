@@ -41,8 +41,9 @@
 		    onEditorReady(editor) {
 		        console.log('editor ready!', editor)
 		    },
-		    submit(){
+		    submit(){   
                 console.log(this.content);
+                this.$router.go(-1);
                 this.$message.success('提交成功！');
             }
         },
